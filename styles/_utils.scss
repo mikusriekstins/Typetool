@@ -1,0 +1,39 @@
+
+// Strip units
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+// Relative units from pixels
+$baseFontSize : 16;
+@function rem($pixels, $context: $baseFontSize) {
+  $u-pixels: strip-unit($pixels);
+  $u-context: strip-unit($context);
+
+  @if (unitless($u-pixels)) {
+    $u-pixels: $u-pixels * 1px;
+  }
+
+  @if (unitless($u-context)) {
+    $u-context: $u-context * 1px;
+  }
+
+  @return $u-pixels / $u-context * 1rem;
+}
+
+// Grid column
+@mixin grid-col($fr, $of, $size:"") {
+  .col--#{$size}#{$fr}-#{$of} {
+    width: 100% / $of * $fr;
+  }
+}
+
+@mixin grid-push($fr, $of, $size:"") {
+  .push--#{$size}#{$fr}-#{$of} {
+    margin-left: 100% / $of * $fr;
+  }
+}

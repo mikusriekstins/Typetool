@@ -1,0 +1,35 @@
+.button {
+  width: 100%;
+  display: block;
+  border: solid 1px transparent;
+  appearance: none;
+  background-color: $brand-primary;
+  color: #fff;
+  border-radius: rem(6);
+  font-size: $font-size-base;
+  line-height: $line-height;
+  height: rem(46);
+  padding: rem(8) rem(12);
+  cursor: pointer;
+  transition: background-color .2s $bezier, color .2s $bezier;
+
+  &:hover {
+    background-color: darken($brand-primary, 10%);
+    color: #fff;
+  }
+
+  &:active {
+    background-color: darken($brand-primary, 25%);
+    color: #fff;
+  }
+
+  &--secondary {
+    background-color: transparent;
+    border-color: $brand-primary;
+    color: $brand-primary;
+  }
+
+  & + .button {
+    margin-top: rem(8);
+  }
+}

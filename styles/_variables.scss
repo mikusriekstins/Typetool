@@ -1,0 +1,85 @@
+// ------------------------------------------------------------
+// Global variables
+// ------------------------------------------------------------
+
+
+// Colors
+// ------------------------------------------------------------
+
+$brand-primary: rgb(56, 97, 251);
+
+$gray-lighter: #f0f0f0;
+$gray-light: rgb(207, 214, 228);
+$gray: #4d4d4d;
+$gray-dark: #131317;
+$gray-darker: #0D0D10;
+
+
+// Typography
+// ------------------------------------------------------------
+
+$font-family: "IBM Plex Sans", Helvetica, Arial, sans-serif;
+
+$font-size-tiny: rem(13);
+$font-size-small: rem(15);
+$font-size-base: rem(18);
+$font-size-large: rem(26);
+$font-size-h5: rem(15);
+$font-size-h4: rem(18);
+$font-size-h3: rem(26);
+$font-size-h2: rem(36);
+$font-size-h1: rem(53);
+
+$line-height: 1.6;
+$line-height-sm: 1.15;
+$line-height-md: 1.25;
+
+
+// Positioning
+// ========================================
+
+$z-top: 1000;
+$z-way-above: 100;
+$z-more-above: 50;
+$z-above: 10;
+$z-below: -1;
+
+
+// Layout
+// ========================================
+
+$grid-gutter: 30px;
+$max-width: 1285px;
+$min-width: 320px;
+$side-spacing: 60px;
+
+
+// Animation
+// ========================================
+
+$bezier: cubic-bezier(.41,.39,.26,1);
+
+// Breakpoints
+// ========================================
+
+$bp-xxl: 1920px;
+$bp-xl: 1600px;
+$bp-lg: 1020px;
+$bp-md: 820px;
+$bp-sm: 568px;
+$bp-xs: 375px;
+
+// Space variables
+// ========================================
+
+$s-xxxl: rem(72);
+$s-xxl: rem(48);
+$s-xl: rem(40);
+$s-lg: rem(32);
+$s-md: rem(24);
+$s-sm: rem(16);
+$s-xs: rem(8);
+
+
+
+

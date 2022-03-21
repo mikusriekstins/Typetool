@@ -1,0 +1,14 @@
+
+.tool_display {
+  margin-left: 20rem;
+  padding: 4rem;
+
+  &__container {
+    max-width: 60rem;
+    margin: 0 auto;
+
+    p {
+      max-width: 38em;
+    }
+  }
+}

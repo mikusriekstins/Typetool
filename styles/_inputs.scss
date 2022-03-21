@@ -1,0 +1,40 @@
+label {
+  font-size: $font-size-tiny;
+  display: block;
+  margin-bottom: rem(4);
+}
+
+select,
+input {
+  width: 100%;
+  display: block;
+  appearance: none;
+  height: rem(46);
+  font-size: $font-size-base;
+  line-height: $line-height;
+  padding: rem(8) rem(12);
+  border-radius: rem(6);
+  border: solid 1px $gray-light;
+  outline: solid 1px transparent;
+  transition: border-color .2s $bezier, outline .2s $bezier;
+
+  &:focus {
+    outline: none;
+    border-color: $brand-primary;
+  }
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  width: rem(32);
+  height: rem(32);
+  border-radius: 50%;
+  background: $brand-primary;
+  border: solid 1px $brand-primary;
+}
+
+.input_group {
+  margin-bottom: rem(16);
+}
